@@ -1,0 +1,27 @@
+Quartus Prime Archive log --	C:/Users/brett/Desktop/circuits/Lab10.1/Lab10_1_tmp_archive.qarlog
+
+Archive:	C:/Users/brett/Desktop/circuits/Lab10.1/Lab10_1_tmp_archive.qar
+Date:		Wed Apr 04 16:33:57 2018
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/brett/Desktop/circuits/Lab10.1/Lab10_1.qpf
+C:/Users/brett/Desktop/circuits/Lab10.1/Walking1_FSM.vhd
+C:/Users/brett/Desktop/circuits/Lab10.1/assignment_defaults.qdf
+C:/Users/brett/Desktop/circuits/Lab10.1/char_decoder.vhd
+C:/Users/brett/Desktop/circuits/Lab10.1/clock_div__2ton.vhd
+C:/Users/brett/Desktop/circuits/Lab10.1/clock_div__prec.vhd
+C:/Users/brett/Desktop/circuits/Lab10.1/dflipflop.vhd
+C:/Users/brett/Desktop/circuits/Lab10.1/rom_64x8_sync.vhd
+C:/Users/brett/Desktop/circuits/Lab10.1/top.qsf
+C:/Users/brett/Desktop/circuits/Lab10.1/top.vhd
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Apr 04 16:33:58 2018
+Source archive file:	C:/Users/brett/Desktop/circuits/Lab10.1/Lab10_1_tmp_archive.qar
+Archive was extracted into	C:/Users/brett/Desktop/circuits/Lab12.1/
+		 - successfully.

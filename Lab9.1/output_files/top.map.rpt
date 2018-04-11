@@ -1,0 +1,461 @@
+Analysis & Synthesis report for top
+Wed Feb 14 22:33:34 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Port Connectivity Checks: "Dflipflop:D13"
+ 12. Port Connectivity Checks: "Dflipflop:D12"
+ 13. Port Connectivity Checks: "Dflipflop:D11"
+ 14. Port Connectivity Checks: "Dflipflop:D10"
+ 15. Port Connectivity Checks: "Dflipflop:D9"
+ 16. Port Connectivity Checks: "Dflipflop:D8"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Feb 14 22:33:34 2018       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; top                                         ;
+; Top-level Entity Name           ; top                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 69                                          ;
+; Total pins                      ; 66                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; top                ; top                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.3%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; top.vhd                          ; yes             ; User VHDL File  ; C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd          ;         ;
+; char_decoder.vhd                 ; yes             ; User VHDL File  ; C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/char_decoder.vhd ;         ;
+; dflipflop.vhd                    ; yes             ; User VHDL File  ; C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/dflipflop.vhd    ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 56          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 111         ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 42          ;
+;     -- <=3 input functions                  ; 69          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 69          ;
+;                                             ;             ;
+; I/O pins                                    ; 66          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Reset~input ;
+; Maximum fan-out                             ; 69          ;
+; Total fan-out                               ; 570         ;
+; Average fan-out                             ; 1.83        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+--------------+--------------+
+; |top                       ; 111 (0)             ; 69 (0)                    ; 0                 ; 0          ; 66   ; 0            ; |top                 ; top          ; work         ;
+;    |Dflipflop:D0|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D0    ; Dflipflop    ; work         ;
+;    |Dflipflop:D10|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D10   ; Dflipflop    ; work         ;
+;    |Dflipflop:D11|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D11   ; Dflipflop    ; work         ;
+;    |Dflipflop:D12|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D12   ; Dflipflop    ; work         ;
+;    |Dflipflop:D13|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D13   ; Dflipflop    ; work         ;
+;    |Dflipflop:D14|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D14   ; Dflipflop    ; work         ;
+;    |Dflipflop:D15|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D15   ; Dflipflop    ; work         ;
+;    |Dflipflop:D16|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D16   ; Dflipflop    ; work         ;
+;    |Dflipflop:D17|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D17   ; Dflipflop    ; work         ;
+;    |Dflipflop:D18|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D18   ; Dflipflop    ; work         ;
+;    |Dflipflop:D19|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D19   ; Dflipflop    ; work         ;
+;    |Dflipflop:D1|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D1    ; Dflipflop    ; work         ;
+;    |Dflipflop:D20|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D20   ; Dflipflop    ; work         ;
+;    |Dflipflop:D21|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D21   ; Dflipflop    ; work         ;
+;    |Dflipflop:D22|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D22   ; Dflipflop    ; work         ;
+;    |Dflipflop:D23|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D23   ; Dflipflop    ; work         ;
+;    |Dflipflop:D24|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D24   ; Dflipflop    ; work         ;
+;    |Dflipflop:D25|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D25   ; Dflipflop    ; work         ;
+;    |Dflipflop:D26|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D26   ; Dflipflop    ; work         ;
+;    |Dflipflop:D27|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D27   ; Dflipflop    ; work         ;
+;    |Dflipflop:D28|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D28   ; Dflipflop    ; work         ;
+;    |Dflipflop:D29|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D29   ; Dflipflop    ; work         ;
+;    |Dflipflop:D2|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D2    ; Dflipflop    ; work         ;
+;    |Dflipflop:D30|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D30   ; Dflipflop    ; work         ;
+;    |Dflipflop:D31|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D31   ; Dflipflop    ; work         ;
+;    |Dflipflop:D32|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D32   ; Dflipflop    ; work         ;
+;    |Dflipflop:D33|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D33   ; Dflipflop    ; work         ;
+;    |Dflipflop:D34|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D34   ; Dflipflop    ; work         ;
+;    |Dflipflop:D35|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D35   ; Dflipflop    ; work         ;
+;    |Dflipflop:D36|         ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D36   ; Dflipflop    ; work         ;
+;    |Dflipflop:D37|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D37   ; Dflipflop    ; work         ;
+;    |Dflipflop:D3|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D3    ; Dflipflop    ; work         ;
+;    |Dflipflop:D4|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D4    ; Dflipflop    ; work         ;
+;    |Dflipflop:D5|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D5    ; Dflipflop    ; work         ;
+;    |Dflipflop:D6|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D6    ; Dflipflop    ; work         ;
+;    |Dflipflop:D7|          ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D7    ; Dflipflop    ; work         ;
+;    |Dflipflop:D8|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D8    ; Dflipflop    ; work         ;
+;    |Dflipflop:D9|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|Dflipflop:D9    ; Dflipflop    ; work         ;
+;    |char_decoder:C0|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|char_decoder:C0 ; char_decoder ; work         ;
+;    |char_decoder:C1|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|char_decoder:C1 ; char_decoder ; work         ;
+;    |char_decoder:C2|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|char_decoder:C2 ; char_decoder ; work         ;
+;    |char_decoder:C3|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|char_decoder:C3 ; char_decoder ; work         ;
+;    |char_decoder:C4|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|char_decoder:C4 ; char_decoder ; work         ;
+;    |char_decoder:C5|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|char_decoder:C5 ; char_decoder ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------+
+; Registers Removed During Synthesis                                  ;
++---------------------------------------+-----------------------------+
+; Register name                         ; Reason for Removal          ;
++---------------------------------------+-----------------------------+
+; Dflipflop:D37|Qn                      ; Merged with Dflipflop:D37|Q ;
+; Total Number of Removed Registers = 1 ;                             ;
++---------------------------------------+-----------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 69    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; Dflipflop:D28|Qn                        ; 4       ;
+; Dflipflop:D27|Qn                        ; 4       ;
+; Dflipflop:D29|Qn                        ; 4       ;
+; Dflipflop:D30|Qn                        ; 4       ;
+; Dflipflop:D31|Qn                        ; 4       ;
+; Dflipflop:D32|Qn                        ; 4       ;
+; Dflipflop:D33|Qn                        ; 4       ;
+; Dflipflop:D34|Qn                        ; 4       ;
+; Dflipflop:D35|Qn                        ; 4       ;
+; Dflipflop:D36|Qn                        ; 3       ;
+; Dflipflop:D14|Qn                        ; 4       ;
+; Dflipflop:D13|Qn                        ; 3       ;
+; Dflipflop:D15|Qn                        ; 4       ;
+; Dflipflop:D16|Qn                        ; 4       ;
+; Dflipflop:D17|Qn                        ; 4       ;
+; Dflipflop:D18|Qn                        ; 4       ;
+; Dflipflop:D19|Qn                        ; 4       ;
+; Dflipflop:D20|Qn                        ; 4       ;
+; Dflipflop:D21|Qn                        ; 4       ;
+; Dflipflop:D22|Qn                        ; 4       ;
+; Dflipflop:D23|Qn                        ; 4       ;
+; Dflipflop:D24|Qn                        ; 4       ;
+; Dflipflop:D25|Qn                        ; 4       ;
+; Dflipflop:D26|Qn                        ; 4       ;
+; Dflipflop:D0|Qn                         ; 4       ;
+; Dflipflop:D1|Qn                         ; 4       ;
+; Dflipflop:D2|Qn                         ; 4       ;
+; Dflipflop:D3|Qn                         ; 4       ;
+; Dflipflop:D4|Qn                         ; 4       ;
+; Dflipflop:D5|Qn                         ; 4       ;
+; Dflipflop:D6|Qn                         ; 4       ;
+; Dflipflop:D7|Qn                         ; 3       ;
+; Dflipflop:D12|Qn                        ; 2       ;
+; Dflipflop:D11|Qn                        ; 2       ;
+; Dflipflop:D10|Qn                        ; 2       ;
+; Dflipflop:D9|Qn                         ; 2       ;
+; Dflipflop:D8|Qn                         ; 2       ;
+; Total number of inverted registers = 37 ;         ;
++-----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Dflipflop:D13"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Dflipflop:D12"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Dflipflop:D11"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Dflipflop:D10"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Dflipflop:D9"                                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Dflipflop:D8"                                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 69                          ;
+;     CLR               ; 69                          ;
+; arriav_lcell_comb     ; 117                         ;
+;     normal            ; 117                         ;
+;         1 data inputs ; 75                          ;
+;         4 data inputs ; 42                          ;
+; boundary_port         ; 66                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.14                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Feb 14 22:33:21 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab9_1 -c top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file top.vhd
+    Info (12022): Found design unit 1: top-top_arch File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 18
+    Info (12023): Found entity 1: top File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file char_decoder.vhd
+    Info (12022): Found design unit 1: char_decoder-char_decoder_arch File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/char_decoder.vhd Line: 9
+    Info (12023): Found entity 1: char_decoder File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/char_decoder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file dflipflop.vhd
+    Info (12022): Found design unit 1: Dflipflop-Dflipflop_arch File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/dflipflop.vhd Line: 9
+    Info (12023): Found entity 1: Dflipflop File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/dflipflop.vhd Line: 4
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "Dflipflop" for hierarchy "Dflipflop:D0" File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 35
+Info (12128): Elaborating entity "char_decoder" for hierarchy "char_decoder:C0" File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 74
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 7
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Brett Shelley/Desktop/circuits/Lab9.1/top.vhd Line: 7
+Info (21057): Implemented 177 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 60 output pins
+    Info (21061): Implemented 111 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 779 megabytes
+    Info: Processing ended: Wed Feb 14 22:33:34 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:24
+
+

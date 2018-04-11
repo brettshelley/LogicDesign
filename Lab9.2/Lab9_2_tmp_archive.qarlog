@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/Lab9_2_tmp_archive.qarlog
+
+Archive:	C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/Lab9_2_tmp_archive.qar
+Date:		Wed Feb 28 03:04:35 2018
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/Lab9_2.qpf
+C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/Walking1_FSM.vhd
+C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/assignment_defaults.qdf
+C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/char_decoder.vhd
+C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/dflipflop.vhd
+C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/top.qsf
+C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/top.vhd
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Feb 28 03:04:37 2018
+Source archive file:	C:/Users/Brett Shelley/Desktop/circuits/Lab9.2/Lab9_2_tmp_archive.qar
+Archive was extracted into	C:/Users/Brett Shelley/Desktop/circuits/Lab9.3/
+		 - successfully.

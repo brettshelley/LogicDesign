@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/17.1
+Esystemj
+Z0 w1517455444
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Brett Shelley/Desktop/circuits/8.4
+Z4 8C:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ.vhd
+Z5 FC:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ.vhd
+l0
+L4
+VmeLHNkg=^c;OgO3Vl3i721
+!s100 dTFQ:bz=obaz8O@NTIV3h3
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1517455449
+!i10b 1
+Z8 !s108 1517455449.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ.vhd|
+Z10 !s107 C:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Asystemj_arch
+R1
+R2
+DEx4 work 7 systemj 0 22 meLHNkg=^c;OgO3Vl3i721
+l10
+L9
+VUmA<DEWXK6@l8g?5`YNc93
+!s100 zT4_CJ=KOaMgh@`GEhYS12
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esystemj_tb
+Z13 w1517455332
+R1
+R2
+R3
+Z14 8C:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ_TB.vhd
+Z15 FC:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ_TB.vhd
+l0
+L4
+V?SPZ6jWBfnn<9S5g]W?@20
+!s100 dj]CS[KJeicOHk[XJNEf<2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ_TB.vhd|
+Z17 !s107 C:\Users\Brett Shelley\Desktop\circuits\8.4\SystemJ_TB.vhd|
+!i113 1
+R11
+R12
+Asystemj_tb_arch
+R1
+R2
+Z18 DEx4 work 10 systemj_tb 0 22 ?SPZ6jWBfnn<9S5g]W?@20
+l17
+L7
+Z19 VR[gfnRa6PMhmRE28eeNG53
+Z20 !s100 :P5<MiheE5zkd0Gf4odaT0
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

@@ -1,0 +1,13 @@
+
+State Machine - |top|Walking1_FSM:FSM|current_state
+Name current_state.L9 current_state.L8 current_state.L7 current_state.L6 current_state.L5 current_state.L4 current_state.L3 current_state.L2 current_state.L1 current_state.L0 
+current_state.L0 0 0 0 0 0 0 0 0 0 0 
+current_state.L1 0 0 0 0 0 0 0 0 1 1 
+current_state.L2 0 0 0 0 0 0 0 1 0 1 
+current_state.L3 0 0 0 0 0 0 1 0 0 1 
+current_state.L4 0 0 0 0 0 1 0 0 0 1 
+current_state.L5 0 0 0 0 1 0 0 0 0 1 
+current_state.L6 0 0 0 1 0 0 0 0 0 1 
+current_state.L7 0 0 1 0 0 0 0 0 0 1 
+current_state.L8 0 1 0 0 0 0 0 0 0 1 
+current_state.L9 1 0 0 0 0 0 0 0 0 1 

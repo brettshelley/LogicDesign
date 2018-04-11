@@ -1,0 +1,21 @@
+Quartus Prime Archive log --	C:/Users/Brett Shelley/Desktop/circuits/Lab8.1/Lab8_1_tmp_archive.qarlog
+
+Archive:	C:/Users/Brett Shelley/Desktop/circuits/Lab8.1/Lab8_1_tmp_archive.qar
+Date:		Wed Jan 31 20:39:26 2018
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Brett Shelley/Desktop/circuits/Lab8.1/Lab8_1.qpf
+C:/Users/Brett Shelley/Desktop/circuits/Lab8.1/top.qsf
+C:/Users/Brett Shelley/Desktop/circuits/Lab8.1/top.vhd
+c:/intelfpga_lite/17.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 4 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Jan 31 20:39:28 2018
+Source archive file:	C:/Users/Brett Shelley/Desktop/circuits/Lab8.1/Lab8_1_tmp_archive.qar
+Archive was extracted into	C:/Users/Brett Shelley/Desktop/circuits/Lab8.2/
+		 - successfully.
